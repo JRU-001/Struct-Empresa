@@ -1,6 +1,6 @@
 package Logic;
 
-public abstract class Empleado {
+public  class Empleado {
 	
 	public double salarioBase;
 	public String nombre;
