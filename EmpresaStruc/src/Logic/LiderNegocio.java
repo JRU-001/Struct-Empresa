@@ -2,18 +2,19 @@ package Logic;
 
 import java.util.*;
 
-public class LiderNegocio extends Empleado{
+public class LiderNegocio extends Contador{
 	
 	private ArrayList <Empleado> depend;
 	private int maxDep = 10;
 	
 		
-	public LiderNegocio(double salarioBase, String nombre, String jefe, String estatus, int idEmpleado,
-			ArrayList<Empleado> depend, int maxDep) {
-		super(salarioBase, nombre, jefe, estatus, idEmpleado);
+	public LiderNegocio(double salarioBase, String nombre, String jefe, String estatus, int idEmpleado, double bono,
+			ArrayList<LiderTecnico> support, double presupuesto, ArrayList<Empleado> depend, int maxDep) {
+		super(salarioBase, nombre, jefe, estatus, idEmpleado, bono, support, presupuesto);
 		this.depend = depend;
 		this.maxDep = maxDep;
 	}
+	
 	public LiderNegocio(String nombre) {
 		super( nombre);
 	}
@@ -33,9 +34,12 @@ public class LiderNegocio extends Empleado{
 		if(depend.size()<maxDep) {
 			depend.add(c);
 			return true;
+			//bonoAprobado(1.1);
 			}	else {
 				 return false;
-				}		
+				}
+		//addSupport(EquipoSoporte);
+		
 	}
 	//Recibe un objeto Contador y si tiene un número de dependientes menor que el máximo número de dependientes que puede tener,
 	//agrega el mismo a la lista de sus dependientes.  Si el Contador es agregado exitosamente debe retornar “true”,
