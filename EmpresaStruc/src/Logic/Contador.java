@@ -1,11 +1,20 @@
 package Logic;
 
-public class Contador {
+import java.util.*;
+
+public class Contador extends Empleado{
+	private double bono =0;
+	private ArrayList <Empleado> support;
+	private double presupuesto;
+	
+	
 
 	public Contador(String nombre);
 	//Debe comenzar con un bono de presupuesto de 0 y sin equipo al que oficialmente le dé soporte. 
 	 
-	public LiderTecnico getEquipoSoporta();
+	public LiderTecnico getEquipoSoporta() {
+		return null;
+	};
 	//Retorna una referencia al líder técnico al que actualmente le da soporte.
 	//Si no ha sido asignado a un líder técnico debe retornar “null”. 
 	 

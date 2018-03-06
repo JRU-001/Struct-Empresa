@@ -1,5 +1,6 @@
 package Logic;
 
+
 public  class Empleado {
 	
 	private double salarioBase;
@@ -16,6 +17,10 @@ public  class Empleado {
 		this.jefe = jefe;
 		this.estatus = estatus;
 		IdEmpleado = idEmpleado;
+	}
+	public Empleado(String nombre) {
+		super();
+		this.nombre = nombre;
 	}
 
 	public double getSalarioBase() {

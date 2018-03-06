@@ -12,6 +12,10 @@ public class IngenieroSoftware extends Tecnico{
 		this.acceso = acceso;
 		this.aprovado = aprovado;
 	}
+	
+	public IngenieroSoftware(String nombre) {
+		super(nombre);
+	}
 	//Debe comenzar sin acceso al código fuente ni chequeos realizados. 
 	
 	 

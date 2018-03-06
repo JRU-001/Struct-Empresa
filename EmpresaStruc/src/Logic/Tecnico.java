@@ -12,6 +12,10 @@ public class Tecnico extends Empleado{
 	}
 	//Constructor.  Los técnicos tienen un salario base de 75000. 
 	 
+	 public Tecnico(String nombre) {
+			super(nombre);
+		}
+	 
 	public String estatusEmpleado() {		
 		String Stat = getIdEmpleado() + " " + getNombre() + " " + Integer.toString(chequeos) + "Chequeos exitosos";		
 		return Stat;
