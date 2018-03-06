@@ -7,6 +7,7 @@ public class Compania {
 		///////
 		/////Codigo de comprobacion
 		///////
+		//System.out.println("a");
 		
 		LiderTecnico LTA = new LiderTecnico("Julio Bonilla");
         IngenieroSoftware iSA = new IngenieroSoftware("Manuel");
